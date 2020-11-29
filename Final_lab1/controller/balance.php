@@ -26,8 +26,15 @@
             </td>
         </tr>
     </table>
-    <label for="add">Add Balance</label>
-    <input type="text">
+    
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" >
+        <label for="amount">Enter Amount</label>
+        <input type="text" name="amount" value=<?php echo $amount ?> >
+        <input type="submit" name="add" value="Add">
+        <input type="submit" name="withdraw" value="Withdraw">
+    </form>
+    
+    
    
     
 </body>
